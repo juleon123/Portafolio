@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: auto; */
+    scroll-behavior: smooth;
+    color: #1D1D1D;
+
+}
+
+@font-face{
+    font-family: "bills";
+    src: url(../../recursos/tipografia/StickNoBills-Regular.ttf), url(../../recursos/tipografia/StickNoBills-Regular.otf);
+}
+
+@font-face{
+    font-family: "billsbold";
+    src: url(../../recursos/tipografia/StickNoBills-ExtraBold.ttf), url(../../recursos/tipografia/StickNoBills-ExtraBold.otf);
+}
+
+
+
+:root{
+    --amarillo: #FECD43;
+    --amarillodos: #D99E30;
+    --vinotinto:#591914;
+    --gris:#1D1D1D;
+}
+
+h1, h2{
+    font-family: "billsbold";
+    color: #1D1D1D;
+
+}
+h3, h4, h5, h6{
+    font-family: "bills";
+    color: #1D1D1D;
+
+}
+
+
+section{
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.navbar{
+    filter: opacity(0.6);
+    background-color:var(--amarillo);
+    height: 60px;
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+}
+.navbar:hover{
+    filter: opacity(1);
+}
+
+.dentro{
+    height: 100%;
+}
+.navbar-brand{
+    height: 50px;
+    z-index: 99999;
+}
+.dropdown-menu{
+    background-color:#4d370fa4; ;
+}
+
+.dropdown-item{
+    color: white;
+}
+.navbar-brand img{ height: 200%;
+    object-fit: contain;
+}
+
+.nav-link{
+    transition: 0.4s;
+}
+
+.nav-link:hover{
+    color: #591914;
+}
+
+/* SECCION DE PORTAFOLIO */
+
+.grupo-articulos{
+    justify-content: space-around;
+    width: 80%;
+}
+
+.articulos{
+    margin-top: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.articulos:hover{
+    transform: scale(1.05);
+}
+.articulos article img{
+    transition: 0.7s;
+
+
+}
+.articulos:hover article img{
+    transform: scale(1.05);
+
+}
+.articulos article h3,p{
+    color: #1D1D1D;
+    transition: 0.4s;
+}
+
+.articulos:hover article h3{
+    color:#591914;
+}
+.articulos:hover article p{
+    color:#591914;
+}
+
+/* SECCION DEL PERFIL */
+#perfil{
+    background-color: var(--amarillo);
+}
+.marco-fotito{
+    height: 400px;
+
+    overflow: hidden;
+
+
+}
+.marco-fotito img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -2px;
+    border-radius: 10px;
+
+}
+
+.datos_de_mi{
+    text-align: right;
+}
+
+.ingles{
+    height: 100px;
+}
+.español{
+    height: 100px;
+}
+.gustos{
+
+}
+
+.gustos_texto{
+    font-weight: 900;
+    font-size: 1.3em;
+}
+.gustitos{
+    justify-content: space-around;
+    height: 100%;
+}
+.gustitos div{
+    border-radius: 50px;
+    border: 4px solid var(--vinotinto);
+}
+
+
+
+.gustitos div img{
+    width: 100%;
+    object-fit: contain;
+    transition: 0.4s;
+}
+
+.gustitos div:hover img{
+    transform: scale(1.07) rotate(10deg);
+
+}
+
+
+.cuadrado-gris{
+    width: 100%;
+    background-color: #525252;
+    height: 30px;
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+.cuadrado-vino-tinto{
+    width: 0%;
+    background-color: #591914;
+    position: relative;
+    height: 100%;
+    transition: 0.6s;
+}
+
+#perfil:hover .perfil .idiomas .ingles .cuadrado-gris .cuadrado-vino-tinto{
+    width: 50%;
+}
+
+.reflejo-uno{
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10%;
+    height: 5px;
+    background-color: #ffffff79;
+    border-radius:200px;
+}
+
+.reflejo-dos{
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    right: 40%;
+    height: 5px;
+    background-color: #ffffff50;
+    border-radius:200px;
+}
+
+.cuadrado-dorado{
+    width: 0%;
+    background-color: var(--amarillodos);
+    position: relative;
+    height: 100%;
+    transition: 1.2s;
+}
+
+#perfil:hover .perfil .idiomas .español .cuadrado-gris .cuadrado-dorado{
+    width: 100%;
+}
+
+
+/* FRANJA DE CONTACTOS */
+
+#contactos{
+    background: linear-gradient(to bottom,#591914 80%, #a73931 110%);
+    align-items: center;
+    display: flex;
+}
+
+.titulo_contacto{
+    color: white;
+}
+
+
+.titulo_contacto span{
+    color: #D99E30;
+}
+
+#contactos div{
+   color: white;
+}
+#contactos div div
+
+.contactar_to_me{
+    width: 70%;
+}
+
+.contactar_to_me div label{
+    color: white;
+}
+
+.contactar_to_me div input{
+    width: 100%;
+    background-color: transparent;
+    padding: 5px;
+    border-width:0 0 2px 0;
+    border-color:var(--amarillo);
+    margin-bottom:20px;
+    color: white;
+}
+
+.contactar_to_me div textarea{
+    width: 100%;
+    height: 40px;
+    resize: none;
+    background-color: transparent;
+    padding: 5px;
+    border-width:0 0 2px 0;
+    border-color:var(--amarillo);
+    margin-bottom:20px;
+    color: white;
+}
+.mensajedecontacto{
+    width: 100px;
+    height: 40px;
+    background-color: var(--amarillodos);
+     color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.mensajedecontacto:hover{
+    color: black;
+    background-color: white;
+    transform: scale(1.05);
+
+}
+
+/* Footer */
+.redes-sociales{
+    width: 50px;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+.iconos_social{
+    width:100% ;
+    height: 50px;
+    display: flex;
+}
+
+.link_social{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.iconos_social .link_social img{
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.iconos_social .link_social:hover img{
+    transform: scale(1.15);
+}
+
+
+.creditos_mios{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.creditos_mios div{
+    width: 100%;
+}
+
+.ancla{
+    display: flex;
+
+}
+
+.ancla:hover img{
+    transform: rotate(45deg);
+    transition: 0.5s;
+
+}
+
+.ancla img{
+    width: 80%;
+    height: 80%;
+    transform: rotate(60deg);
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width:990px) {
+    #navbarCollapse{ background-color:#4d370fa4;}
+
+    .navbar-nav li a{color: white;}
+
+    .navbar-brand img{
+        height: 140%;
+
+    }
+
+    .marco-fotito{
+        height: 600px;
+
+    }
+    .datos_de_mi{
+        text-align:center;
+    }
+
+
+    .redes-sociales{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+    }
+    .iconos_social{
+        display: flex;
+        justify-content: center;
+    }
+    .link_social{
+        justify-content: center;
+    }
+
+
+    .creditos_mios div{
+        text-align: center;
+    }
+
+
+}

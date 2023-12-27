@@ -1,0 +1,115 @@
+@font-face{
+    font-family: "bills";
+    src: url(../../recursos/tipografia/StickNoBills-Regular.ttf), url(../../recursos/tipografia/StickNoBills-Regular.otf);
+}
+
+@font-face{
+    font-family: "billsbold";
+    src: url(../../recursos/tipografia/StickNoBills-ExtraBold.ttf), url(../../recursos/tipografia/StickNoBills-ExtraBold.otf);
+}
+
+
+
+:root{
+    --amarillo: #FECD43;
+    --amarillodos: #D99E30;
+    --vinotinto:#591914;
+    --gris:#1D1D1D;
+}
+
+
+
+.navbar{
+    filter: opacity(0.6);
+    background-color:var(--amarillo);
+    height: 60px;
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+}
+.navbar:hover{
+    filter: opacity(1);
+}
+
+.dentro{
+    height: 100%;
+}
+.navbar-brand{
+    height: 50px;
+    z-index: 99999;
+}
+.dropdown-menu{
+    background-color:#4d370fa4; ;
+}
+
+.dropdown-item{
+    color: white;
+}
+.navbar-brand img{ height: 200%;
+    object-fit: contain;
+}
+
+.nav-link{
+    transition: 0.4s;
+}
+
+.nav-link:hover{
+    color: #591914;
+}
+
+
+.galeriass{
+
+}
+
+.galeria{
+    justify-content: center;
+}
+
+
+.galeria-marco-img{
+    margin-top: 70px;
+    height: 500px;
+
+
+overflow: hidden;
+}
+.galeria-marco-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.galeria-marco-img iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.modal-body img{
+    margin-bottom: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+.modal-body iframe{
+    margin-bottom: 30px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#tere div{
+    height: 50%;
+    overflow: hidden;
+}
+
+#tere div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
